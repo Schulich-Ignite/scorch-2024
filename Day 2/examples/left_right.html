@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .aligned-image {
+            max-height:60vh;
+            display:flex;
+            align-items: center;
+        }
+
+        .aligned-image div{
+            width:50%;
+            flex-basis: 50%;
+        }
+        .content{
+            padding:1.5em;
+        }
+
+
+        .image-container{
+            
+            overflow:hidden;
+        }
+        
+        .image-container img{
+          height: 100%;
+          width:100%;
+          object-fit: cover;
+          border-radius:1%;
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1 style="font-size:2em; text-align:center;padding:1em;">Compontent example</h1>
+    
+    <!-- Left-aligned image start -->
+    <div class="aligned-image">
+        <div class="image-container">
+            <img src="https://images.unsplash.com/photo-1695982206556-b24503f14a0a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="">
+        </div>
+        <div class="content">
+            <h2 class="heading">Here is an image</h2>
+            And a description of the image would go here. We want some important text to make sure people care about our image. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates tempore deleniti debitis corrupti aperiam, quaerat rem, odio quis sint nesciunt illo illum eius, odit minima delectus non? Unde, in recusandae!
+            Doloremque, numquam molestias fugiat dolor quis eveniet reprehenderit fuga sapiente quam repudiandae aspernatur excepturi possimus consequatur ducimus! Aperiam, molestiae consectetur. Alias natus laudantium ab nostrum ex, eius incidunt laborum explicabo.
+        </div>
+    </div>
+    <!-- Left-aligned image end -->
+
+    <!-- Right-aligned image start -->
+    <div class="aligned-image">
+        <div class="content">
+            <h2 class="heading">Here is an image</h2>
+            And a description of the image would go here. We want some important text to make sure people care about our image. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates tempore deleniti debitis corrupti aperiam, quaerat rem, odio quis sint nesciunt illo illum eius, odit minima delectus non? Unde, in recusandae! 
+            Aperiam, molestiae consectetur. Alias natus laudantium ab nostrum ex, eius incidunt laborum explicabo.
+        </div>
+        <div class="image-container">
+            <img src="https://images.unsplash.com/photo-1695837410218-8ab4b7dd7da6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2669&q=80" alt="">
+        </div>
+    </div>
+    <!-- Right-aligned image end -->
+
+    <!-- Left-aligned image start -->
+    <div class="aligned-image">
+        <div class="image-container">
+            <img src="https://images.unsplash.com/photo-1695931880955-f51fd17a8430?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2670&q=80" alt="">
+        </div>
+        <div class="content">
+            <h2 class="heading">Here is an image</h2>
+            And a description of the image would go here. We want some important text to make sure people care about our image. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates tempore deleniti debitis corrupti aperiam, quaerat rem, odio quis sint nesciunt illo illum eius, odit minima delectus non? Unde, in recusandae!
+            Doloremque, numquam molestias fugiat dolor quis eveniet reprehenderit fuga sapiente quam repudiandae aspernatur excepturi possimus consequatur ducimus! Aperiam, molestiae consectetur. Alias natus laudantium ab nostrum ex, eius incidunt laborum explicabo.
+        </div>
+    </div>
+    <!-- Left-aligned image end -->
+
+</body>
+</html>
