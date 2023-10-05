@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Listing Page</title>
+    <style>
+        body {
+            /*TODO Add variables to the body*/
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+        }
+
+        body[dark]{
+            /*TODO: Add in dark theme variables here*/
+        }
+
+        /*TODO: replace CSS colours below with variables*/
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        h1 {
+            font-size: 36px;
+            margin: 0;
+        }
+
+        main {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .product {
+            display: flex;
+            margin-bottom: 20px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .product img {
+            max-width: 300px;
+            height: auto;
+            margin-right: 20px;
+            aspect-ratio: 16/9;
+            object-fit: cover;
+        }
+
+        .product-details {
+            flex: 1;
+        }
+
+        .product-title {
+            font-size: 20px;
+            font-weight: bold;
+            margin: 0;
+        }
+
+        .product-description {
+            margin: 10px 0;
+        }
+
+        .product-price {
+            font-size: 18px;
+            font-weight: bold;
+            color: #0077b6;
+        }
+
+        button{
+            padding:.75rem;
+            border-radius: 1rem;
+            border-color: var(--button-colour);
+            background-color: var(--button-colour);
+            color:var(--button-text-colour);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Product Listing</h1>
+        <button onclick='document.body.toggleAttribute("dark")'>Change theme</button>
+    </header>
+    <main>
+        <div class="product">
+            <img src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2671&q=80" alt="Product 1">
+            <div class="product-details">
+                <h2 class="product-title">Laptop</h2>
+                <p class="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel justo in purus efficitur aliquam.</p>
+                <p class="product-price">$879.99</p>
+            </div>
+        </div>
+
+        <div class="product">
+            <img src="https://images.unsplash.com/photo-1523206489230-c012c64b2b48?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2574&q=80" alt="Product 2">
+            <div class="product-details">
+                <h2 class="product-title">Phone</h2>
+                <p class="product-description">Suspendisse potenti. Cras ac purus vel justo tincidunt tincidunt sit amet non nulla.</p>
+                <p class="product-price">$499.99</p>
+            </div>
+        </div>
+        
+        <div class="product">
+            <img src="https://images.pexels.com/photos/5490302/pexels-photo-5490302.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Product 2">
+            <div class="product-details">
+                <h2 class="product-title">TV</h2>
+                <p class="product-description">Suspendisse potenti. Cras ac purus vel justo tincidunt tincidunt sit amet non nulla.</p>
+                <p class="product-price">$299.99</p>
+            </div>
+        </div>
+
+        <div class="product">
+            <img src="https://images.pexels.com/photos/6322727/pexels-photo-6322727.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Product 2">
+            <div class="product-details">
+                <h2 class="product-title">Speaker</h2>
+                <p class="product-description">Suspendisse potenti. Cras ac purus vel justo tincidunt tincidunt sit amet non nulla.</p>
+                <p class="product-price">$29.99</p>
+            </div>
+        </div>
+
+        <div class="product">
+            <img src="https://images.pexels.com/photos/2351844/pexels-photo-2351844.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Product 2">
+            <div class="product-details">
+                <h2 class="product-title">Tablet</h2>
+                <p class="product-description">Suspendisse potenti. Cras ac purus vel justo tincidunt tincidunt sit amet non nulla.</p>
+                <p class="product-price">$429.99</p>
+            </div>
+        </div>
+
+
+    </main>
+</body>
+</html>

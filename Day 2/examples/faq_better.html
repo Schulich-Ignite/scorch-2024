@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box; /*Makes math easier*/
+            margin:0; /*Removes  default margins*/
+            padding:0; /*Removes  default padding*/
+            font-family: sans-serif; /*nicer default font*/
+            line-height: 1.6;
+        }
+        .body{ /*use body here if you did that instead*/
+            margin: 0 auto; /*Centers content*/
+            max-width: 120ch; /*Limited to ~120 characters*/
+            min-height:100vh;
+            padding:1em;
+            
+        }
+        h1,h2,h3,h4,h5{
+            text-align: center;
+            margin: 0 auto; /*Centers content*/
+            padding:1.5rem;
+        }
+
+        details{
+            text-align: left;
+            margin: .5rem auto;
+            max-width: 120ch; /*Limited to ~120 characters*/
+            border-radius: 5%;
+            
+        }
+
+        details > p{
+            padding:1rem;
+            background:lightgray;
+            border-bottom-right-radius: 15px;
+            border-bottom-left-radius: 15px;
+        }
+        summary{
+            text-align: center;
+            font-size: 1.5em;
+            cursor:pointer;
+            padding:1rem;
+            background: darkgray;
+            border-radius: 15px;
+            list-style: none; /*Remove default play button icon*/
+        }
+        summary::-webkit-details-marker {
+            display: none; /*Remove default play button icon*/
+        }
+
+        details[open] > summary{
+            border-bottom-right-radius: 0;
+            border-bottom-left-radius: 0;
+        }
+
+        details summary::before { 
+            content:" ▼ "; 
+          }
+
+        details[open] summary::before { 
+            content:" ▲ "; 
+        }
+
+
+    </style>
+</head>
+<body>
+
+<h1>FAQ</h1>
+
+<details>
+    <summary>Question 1?</summary>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita eum voluptate totam, blanditiis necessitatibus nihil sapiente neque vitae excepturi quasi, dignissimos quibusdam natus. Facilis accusantium animi distinctio minus illo expedita.Magni sit alias molestiae quos et, repellendus eligendi perspiciatis natus vel eaque iste id incidunt repellat exercitationem adipisci beatae ea assumenda accusamus laboriosam quidem consectetur, sed suscipit ipsam? Modi, magnam!Reiciendis illum itaque alias nemo exercitationem doloremque minus consectetur voluptate numquam. Reiciendis, vero beatae. Dicta rem excepturi sit placeat blanditiis. Aliquam fugiat sint, voluptatem illum ratione perferendis id autem officia.Facere, quo! Voluptatibus amet tenetur culpa, pariatur ullam ratione officia fugit a et sunt tempora odit eos illum fuga placeat. Sit a ducimus quis unde explicabo expedita! Nulla, qui odit?Aspernatur quisquam dignissimos adipisci facere optio error alias soluta facilis! Neque debitis facere dolorem iste, at illum magnam et culpa dolor quam fugiat rerum? Ipsa assumenda voluptas quisquam tempore illo?Molestiae earum quam id voluptatibus alias ratione vero blanditiis tempore soluta eius deserunt non vitae architecto obcaecati, quos est maiores sequi laboriosam aliquam. Possimus id cum illo eveniet voluptas molestiae.</p>
+</details>
+<details>
+    <summary>Question 2?</summary>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique commodi rerum laudantium repellat, nobis cum praesentium sed necessitatibus numquam non beatae alias autem provident ipsam expedita quidem porro fuga veritatis?Consequuntur voluptas suscipit placeat, voluptatem praesentium molestias dolorum facilis corporis, facere laboriosam rem. Excepturi quod ab eveniet fuga incidunt quisquam impedit beatae doloribus rerum. Ex ut distinctio aliquid obcaecati dolor.Doloribus laborum blanditiis architecto necessitatibus dolore nostrum repellat eligendi praesentium sit, numquam ratione atque dignissimos eius in, excepturi temporibus ullam possimus laboriosam totam impedit id autem similique eveniet? Quaerat, fugiat.Quibusdam voluptatem asperiores blanditiis consequuntur praesentium. Placeat laudantium sequi, consequuntur doloremque mollitia voluptas voluptates, quaerat veritatis, saepe natus rem est labore architecto minima at commodi voluptate! Facere atque ipsam praesentium.Saepe, velit. Officiis animi molestias fuga incidunt illo voluptatum ducimus eum at eligendi, adipisci similique vero iste sequi eius perspiciatis autem architecto, eveniet, vitae nostrum odio iusto natus voluptas alias!Non, facere soluta iste, maiores debitis rerum eos harum perferendis accusantium numquam, minima praesentium aperiam itaque quod consectetur impedit. Iure est placeat rem cumque impedit deserunt suscipit incidunt, porro quo!</p>
+</details>
+<details>
+    <summary>Question 3?</summary>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas animi molestias fugiat velit accusantium est, eos quibusdam alias excepturi recusandae in asperiores? Porro, earum. Animi at placeat eius odio culpa!Nulla sint id veniam consequatur! Perferendis assumenda at repudiandae delectus consectetur nobis odio, quidem tempora quibusdam qui libero amet sed adipisci optio reiciendis accusamus quas quo porro laudantium fuga pariatur.Fugiat voluptatum voluptatem, atque animi libero commodi? Expedita temporibus, quas itaque excepturi ea, possimus dolorum illum deleniti magni non sunt autem eaque, omnis in quis. Eum sequi natus maxime hic.Reprehenderit ratione qui obcaecati est ipsa nisi quis animi, inventore laborum molestias nemo consequatur quos neque tenetur dolor repellendus, doloremque, ab officiis deleniti hic! Itaque suscipit accusamus corrupti iste consequuntur?Sit doloribus non temporibus nobis magni quo hic quam eveniet, ea minus rerum ipsum excepturi itaque modi similique iusto ducimus enim quaerat inventore expedita? Aliquid adipisci dignissimos blanditiis unde rerum.Reiciendis eum cum atque deserunt distinctio voluptas aliquam quisquam, officiis, quod similique repellat dolores repellendus sint, maxime vel dolorum minima. Unde quae aliquam natus at atque blanditiis dolorem eos voluptatibus.</p>
+</details>
+<details>
+    <summary>Question 4?</summary>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem nulla veniam voluptas sequi asperiores corporis odit eius hic fuga blanditiis non dolorem perferendis officiis voluptate officia labore similique, eligendi repellat!Error dolores ex mollitia magni molestias, repellat culpa. Atque ea repellat et illo, odit voluptas, fugit facere dicta, sunt quae provident eius assumenda quidem officiis! Recusandae architecto corporis similique illum!Cum culpa explicabo sunt temporibus qui dolorem suscipit nesciunt nulla modi consequuntur officiis ratione laudantium, ipsa odio nihil tenetur, vitae nemo esse. Iure debitis veniam doloremque assumenda adipisci suscipit quae.Facilis officia magnam sint perspiciatis numquam veritatis aut sapiente repellat, amet deleniti libero distinctio iure omnis nisi incidunt quis facere beatae. Officia sint fugiat nostrum sapiente vel non nihil! Eos.Quaerat nemo laborum molestiae amet aspernatur aut alias eveniet error placeat! Saepe aliquid corporis tempore accusantium quos placeat reiciendis mollitia! Hic, itaque incidunt officia veritatis corrupti ut nisi repellendus voluptates.Velit, accusamus nulla? Obcaecati dolore nostrum aspernatur enim fugit esse id, natus repellendus eius, ipsam cumque, beatae cupiditate veritatis? Deserunt modi minima quae laudantium velit, cumque veniam possimus numquam ducimus.</p>
+</details>
+<details>
+    <summary>Question 5?</summary>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores a voluptatum sit accusamus numquam soluta, eius corporis. Aliquid est harum et voluptate eveniet, aliquam fugit. Corrupti iure architecto eos blanditiis?Expedita qui ipsum itaque numquam adipisci repudiandae, hic assumenda facilis amet minima ullam quo, eligendi, dolorem officia atque optio at! At odio enim, consequatur odit sequi numquam inventore blanditiis aliquid.Tempore non, iste similique, atque quia obcaecati nesciunt perspiciatis totam adipisci commodi asperiores aliquid unde quo omnis! Laudantium corporis dignissimos ratione sit impedit sint tempora quas fugiat, itaque necessitatibus atque?Ex tenetur repellat temporibus, dolorum animi libero ab delectus ipsa earum sapiente accusamus reprehenderit commodi necessitatibus error asperiores mollitia placeat sequi sunt quae iste nam alias velit blanditiis? Atque, quasi.Numquam sequi labore, nobis saepe commodi obcaecati possimus alias reiciendis culpa esse. Illum accusamus non blanditiis, omnis ex accusantium ipsum nesciunt eius rem, nulla mollitia fugiat aspernatur praesentium. Quisquam, temporibus!Nesciunt mollitia numquam facere totam eveniet maiores, quidem debitis veniam laudantium est veritatis iusto rerum consequatur, magnam at, accusantium dolorem nemo voluptatem! Consequatur atque quibusdam voluptates enim vel, quidem tempore?</p>
+</details>
+<details>
+    <summary>Question 6?</summary>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias hic ad sit nostrum magnam architecto ea enim deserunt, rerum perferendis animi perspiciatis adipisci molestias accusantium, minima assumenda optio cum atque.Labore non iste natus deserunt officiis, repudiandae nemo sunt blanditiis fugit ea quam aliquam. Quo expedita sed doloremque iure, consectetur rerum commodi repellendus illo ducimus distinctio deleniti et officiis ipsum!Voluptates rem sequi magnam molestias, ullam tempore beatae voluptatem, iste illum quas deserunt reprehenderit dolore aut nisi est aliquid distinctio dolorem! Eaque magnam culpa quia aliquam excepturi natus, maxime in.Consequuntur voluptatem fugiat assumenda. At ut cupiditate tenetur. Odit adipisci dolores magni nulla voluptas aspernatur iure reprehenderit laboriosam eos blanditiis culpa eum, minima vero architecto atque eius dolorem ipsum ratione.Aliquam tempore quia ratione nam assumenda veritatis eaque repellendus vero alias? Nulla repudiandae natus mollitia nesciunt expedita animi magnam distinctio autem, iure, et itaque perspiciatis eos iste laborum, minima sed?Ducimus explicabo modi quam debitis, quia omnis ea assumenda non odit placeat facilis nesciunt ipsam illo, odio velit accusamus deleniti nisi impedit, quisquam ipsa et! Porro cum delectus quas autem.</p>
+</details>
+
+<details>
+    <summary>Question 7?</summary>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias hic ad sit nostrum magnam architecto ea enim deserunt, rerum perferendis animi perspiciatis adipisci molestias accusantium, minima assumenda optio cum atque.Labore non iste natus deserunt officiis, repudiandae nemo sunt blanditiis fugit ea quam aliquam. Quo expedita sed doloremque iure, consectetur rerum commodi repellendus illo ducimus distinctio deleniti et officiis ipsum!Voluptates rem sequi magnam molestias, ullam tempore beatae voluptatem, iste illum quas deserunt reprehenderit dolore aut nisi est aliquid distinctio dolorem! Eaque magnam culpa quia aliquam excepturi natus, maxime in.Consequuntur voluptatem fugiat assumenda. At ut cupiditate tenetur. Odit adipisci dolores magni nulla voluptas aspernatur iure reprehenderit laboriosam eos blanditiis culpa eum, minima vero architecto atque eius dolorem ipsum ratione.Aliquam tempore quia ratione nam assumenda veritatis eaque repellendus vero alias? Nulla repudiandae natus mollitia nesciunt expedita animi magnam distinctio autem, iure, et itaque perspiciatis eos iste laborum, minima sed?Ducimus explicabo modi quam debitis, quia omnis ea assumenda non odit placeat facilis nesciunt ipsam illo, odio velit accusamus deleniti nisi impedit, quisquam ipsa et! Porro cum delectus quas autem.</p>
+</details>
+
+<details>
+    <summary>Question 8?</summary>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias hic ad sit nostrum magnam architecto ea enim deserunt, rerum perferendis animi perspiciatis adipisci molestias accusantium, minima assumenda optio cum atque.Labore non iste natus deserunt officiis, repudiandae nemo sunt blanditiis fugit ea quam aliquam. Quo expedita sed doloremque iure, consectetur rerum commodi repellendus illo ducimus distinctio deleniti et officiis ipsum!Voluptates rem sequi magnam molestias, ullam tempore beatae voluptatem, iste illum quas deserunt reprehenderit dolore aut nisi est aliquid distinctio dolorem! Eaque magnam culpa quia aliquam excepturi natus, maxime in.Consequuntur voluptatem fugiat assumenda. At ut cupiditate tenetur. Odit adipisci dolores magni nulla voluptas aspernatur iure reprehenderit laboriosam eos blanditiis culpa eum, minima vero architecto atque eius dolorem ipsum ratione.Aliquam tempore quia ratione nam assumenda veritatis eaque repellendus vero alias? Nulla repudiandae natus mollitia nesciunt expedita animi magnam distinctio autem, iure, et itaque perspiciatis eos iste laborum, minima sed?Ducimus explicabo modi quam debitis, quia omnis ea assumenda non odit placeat facilis nesciunt ipsam illo, odio velit accusamus deleniti nisi impedit, quisquam ipsa et! Porro cum delectus quas autem.</p>
+</details>
+
+<details>
+    <summary>Question 9?</summary>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias hic ad sit nostrum magnam architecto ea enim deserunt, rerum perferendis animi perspiciatis adipisci molestias accusantium, minima assumenda optio cum atque.Labore non iste natus deserunt officiis, repudiandae nemo sunt blanditiis fugit ea quam aliquam. Quo expedita sed doloremque iure, consectetur rerum commodi repellendus illo ducimus distinctio deleniti et officiis ipsum!Voluptates rem sequi magnam molestias, ullam tempore beatae voluptatem, iste illum quas deserunt reprehenderit dolore aut nisi est aliquid distinctio dolorem! Eaque magnam culpa quia aliquam excepturi natus, maxime in.Consequuntur voluptatem fugiat assumenda. At ut cupiditate tenetur. Odit adipisci dolores magni nulla voluptas aspernatur iure reprehenderit laboriosam eos blanditiis culpa eum, minima vero architecto atque eius dolorem ipsum ratione.Aliquam tempore quia ratione nam assumenda veritatis eaque repellendus vero alias? Nulla repudiandae natus mollitia nesciunt expedita animi magnam distinctio autem, iure, et itaque perspiciatis eos iste laborum, minima sed?Ducimus explicabo modi quam debitis, quia omnis ea assumenda non odit placeat facilis nesciunt ipsam illo, odio velit accusamus deleniti nisi impedit, quisquam ipsa et! Porro cum delectus quas autem.</p>
+</details>
+
+<details>
+    <summary>Question 10?</summary>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias hic ad sit nostrum magnam architecto ea enim deserunt, rerum perferendis animi perspiciatis adipisci molestias accusantium, minima assumenda optio cum atque.Labore non iste natus deserunt officiis, repudiandae nemo sunt blanditiis fugit ea quam aliquam. Quo expedita sed doloremque iure, consectetur rerum commodi repellendus illo ducimus distinctio deleniti et officiis ipsum!Voluptates rem sequi magnam molestias, ullam tempore beatae voluptatem, iste illum quas deserunt reprehenderit dolore aut nisi est aliquid distinctio dolorem! Eaque magnam culpa quia aliquam excepturi natus, maxime in.Consequuntur voluptatem fugiat assumenda. At ut cupiditate tenetur. Odit adipisci dolores magni nulla voluptas aspernatur iure reprehenderit laboriosam eos blanditiis culpa eum, minima vero architecto atque eius dolorem ipsum ratione.Aliquam tempore quia ratione nam assumenda veritatis eaque repellendus vero alias? Nulla repudiandae natus mollitia nesciunt expedita animi magnam distinctio autem, iure, et itaque perspiciatis eos iste laborum, minima sed?Ducimus explicabo modi quam debitis, quia omnis ea assumenda non odit placeat facilis nesciunt ipsam illo, odio velit accusamus deleniti nisi impedit, quisquam ipsa et! Porro cum delectus quas autem.</p>
+</details>
+
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card example</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+            padding:0;
+            margin:0;
+        }
+        :root{
+            --card-radius: 2rem;
+        }
+
+        body{
+            padding: 3em 0;
+            margin:0 33%;/* Makes the card easier to design*/
+        }
+
+        /*Start Card*/
+        .card{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+        }
+        .card div{
+            flex-basis: 100%;
+        }
+        .card .image{
+            width:100%;
+        }
+
+        .card .image img{
+            width:100%;
+        }
+        /*End Card*/
+
+    </style>
+</head>
+<body>
+
+    <!-- Start card -->
+    <div class="card">
+        <div class="image">
+            <img src="https://images.unsplash.com/photo-1695982206556-b24503f14a0a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="">
+        </div>
+        <div class="content">
+            <h2>What a nice shore</h2>
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. A, obcaecati! Ut repudiandae nostrum quisquam recusandae. Eveniet unde voluptas officiis velit, exercitationem quas fuga id excepturi tempore maiores dolorem pariatur alias.
+            </p>
+        </div>
+    </div>
+    <!-- End card-->
+    
+</body>
+</html>
