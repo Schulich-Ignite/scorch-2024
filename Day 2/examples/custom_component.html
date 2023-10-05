@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Component example</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+            padding:0;
+            margin:0;
+        }
+        body{
+            padding: 3em 0;
+            margin:0;
+        }
+
+        /*Start aligned image*/
+        .aligned-image{
+            display: flex;
+            align-items: center;
+        }
+        .aligned-image div{
+            flex-basis: 50%;
+        }
+
+        .aligned-image .image{
+            width: 50%;
+            overflow-x: hidden;
+        }
+
+        .aligned-image .image img{
+            width: 100%;
+        }
+
+        
+        .aligned-image .content{
+            padding:2em;
+            line-height: 1.2;
+        }
+        .aligned-image .content p{
+            font-size: 20px;
+        }
+        .aligned-image .content h2{
+            font-size: 32px;
+        }
+        /*End aligned image*/
+
+        /*Extra stuff*/
+        .aligned-image:nth-child(even) img{
+            border-top-left-radius: 1rem;
+            border-bottom-left-radius: 1rem;
+            border-top-right-radius: 0;
+            border-bottom-right-radius: 0;
+        }
+        .aligned-image:nth-child(odd) img{
+            border-top-left-radius: 0;
+            border-bottom-left-radius: 0;
+            border-top-right-radius: 1rem;
+            border-bottom-right-radius: 1rem;
+        }
+
+        @media (max-width: 1000px) {
+            .aligned-image{
+                flex-direction:column;
+            }
+            .aligned-image div{
+                flex-basis: 100%;
+            }
+            .aligned-image .image{
+                width:100%;
+            }
+
+            .aligned-image .image img{
+                border-radius: 1rem;
+                
+            }
+        } 
+
+        .aligned-image{
+            margin:1rem;
+            border-radius: 1.5rem;
+            box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.15);
+            overflow-x: hidden;
+            
+        }
+        .aligned-image .image{
+            height:100%;
+            font-size:0;
+            line-height:0;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Start Aligned image -->
+    <div class="aligned-image">
+        <div class="image">
+            <img src="https://images.unsplash.com/photo-1695982206556-b24503f14a0a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="">
+        </div>
+        <div class="content">
+            <h2>What a nice shore</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, labore in cum provident, odio, itaque modi quaerat nostrum fugiat illum cupiditate et fugit culpa rerum! Quam temporibus exercitationem magni labore.
+                Obcaecati similique earum voluptate quaerat modi tempora veritatis ratione debitis, iure laudantium. Iste, quasi quisquam velit tenetur non dolorem, expedita accusantium, amet recusandae numquam rerum laborum earum pariatur libero adipisci.
+            </p>
+        </div>
+    </div>
+    <!-- End Aligned Image-->
+
+    <!-- Start Aligned image -->
+    <div class="aligned-image">
+
+        <div class="content">
+            <h2>What a nice shore</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, labore in cum provident, odio, itaque modi quaerat nostrum fugiat illum cupiditate et fugit culpa rerum! Quam temporibus exercitationem magni labore.
+                Obcaecati similique earum voluptate quaerat modi tempora veritatis ratione debitis, iure laudantium. Iste, quasi quisquam velit tenetur non dolorem, expedita accusantium, amet recusandae numquam rerum laborum earum pariatur libero adipisci.
+            </p>
+        </div>
+        <div class="image">
+            <img src="https://images.unsplash.com/photo-1695982206556-b24503f14a0a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="">
+        </div>
+    </div>
+    <!-- End Aligned Image-->
+
+    <!-- Start Aligned image -->
+    <div class="aligned-image">
+        <div class="image">
+            <img src="https://images.unsplash.com/photo-1695982206556-b24503f14a0a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="">
+        </div>
+        <div class="content">
+            <h2>What a nice shore</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, labore in cum provident, odio, itaque modi quaerat nostrum fugiat illum cupiditate et fugit culpa rerum! Quam temporibus exercitationem magni labore.
+                Obcaecati similique earum voluptate quaerat modi tempora veritatis ratione debitis, iure laudantium. Iste, quasi quisquam velit tenetur non dolorem, expedita accusantium, amet recusandae numquam rerum laborum earum pariatur libero adipisci.
+            </p>
+        </div>
+    </div>
+    <!-- End Aligned Image
+    
+</body>
+</html>

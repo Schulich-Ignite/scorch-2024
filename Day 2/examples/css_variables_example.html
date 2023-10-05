@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Variables Blog Post</title>
+    <style>
+        body{
+            --header-colour: #141414;
+            --header-text-colour: #fff;
+
+            --background-colour: #f2f2f2;
+
+            --code-text-colour: #ffffff;
+            --code-background-colour: #333;
+
+            --button-colour: #fff;
+            --button-text-colour: #333;
+
+            font-family: Arial, sans-serif;
+            background-color: var(--background-colour);
+            margin: 0;
+            padding: 0;
+        }
+        body[dark] button{
+            border-color: #333;
+            background-color: #333;
+            color:#fff;
+        }
+
+        body[dark]{
+            --header-colour: invert(--header-colour);
+
+            --background-colour: invert(--background-colour);
+            --header-text-colour: invert(--header-text-colour);
+
+            --code-background-colour: invert(--code-background-colour);
+            --code-text-colour: invert(--code-text-colour);
+
+            --button-colour: invert(--button-colour);
+            --button-text-colour: invert(--button-text-colour);
+        }
+
+        header {
+            background-color: var(--header-colour);
+            color: var(--header-text-colour);
+            text-align: center;
+            padding: 20px 0;
+            border-bottom-right-radius: 1rem ;
+            border-bottom-left-radius: 1rem ;
+            box-shadow: 5px 5px 5px #333;
+        }
+
+        h1 {
+            font-size: 36px;
+            margin: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: var(--background-colour);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .content {
+            line-height: 1.6;
+        }
+
+        .highlight {
+            color: #0077b6;
+            font-weight: bold;
+        }
+
+        .code {
+            background-color: var(--code-background-colour);
+            padding:.3rem;
+            border: 1px solid var(--code-text-colour);
+            border-radius: .5rem;
+            font-family: monospace;
+            color: var(--code-text-colour);
+        }
+
+        button{
+            padding:.75rem;
+            border-radius: 1rem;
+            border-color: var(--button-colour);
+            background-color: var(--button-colour);
+            color:var(--button-text-colour);
+        }
+
+
+
+        /* CSS Variables Example */
+        .custom-box {
+            width: 200px;
+            height: 200px;
+            background-color: var(--box-color, #3498db);
+            color: var(--background-colour);
+            text-align: center;
+            line-height: 200px;
+            font-size: 20px;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>CSS Variables and How to Use Them</h1>
+        <button onclick='document.body.toggleAttribute("dark")'>Change theme</button>
+    </header>
+    <div class="container">
+        <div class="content">
+            <p>CSS variables, also known as custom properties, are a powerful feature introduced in CSS that allow you to define reusable values in your stylesheets. They are denoted by a name prefixed with two hyphens (e.g., <span class="highlight">--box-color</span>).</p>
+
+            <p>Here's an example of how to use CSS variables:</p>
+
+            <div class="code">
+                <pre>
+                    <code>
+                        :root {
+                            --box-color: #3498db;
+                        }
+
+                        .custom-box {
+                            width: 200px;
+                            height: 200px;
+                            background-color: var(--box-color);
+                            /* ... */
+                        }
+                    </code>
+                </pre>
+            </div>
+
+            <p>In the example above, we define a CSS variable <span class="highlight">--box-color</span> in the <span class="highlight">:root</span> selector (which represents the root of the document). This variable is then used in the <span class="highlight">.custom-box</span> class to set the background color of the box. By changing the value of <span class="highlight">--box-color</span> in one place, you can easily update the color of all elements that use it.</p>
+
+            <p>CSS variables make your stylesheets more maintainable and flexible, allowing you to create dynamic and customizable designs with ease.</p>
+        </div>
+
+        <div class="custom-box">
+            CSS Variables
+        </div>
+    </div>
+</body>
+</html>
